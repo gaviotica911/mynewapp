@@ -29,7 +29,7 @@ describe('BookListComponent', () => {
    component = fixture.componentInstance;
 
    component.series = [
-     new Serie(faker.lorem.sentence(), faker.name.firstName(), faker.datatype.number())
+    
    ]
 
    fixture.detectChanges();
@@ -47,7 +47,7 @@ describe('BookListComponent', () => {
  it('should have an dd element ', () => {
    const dd = debug.query(By.css('dd'));
    const content: HTMLElement = dd.nativeElement;
-   expect(content.textContent).toEqual(component.courses[0].name)
+   expect(content.textContent).toEqual(component.series[0].name)
  });
 
 });
